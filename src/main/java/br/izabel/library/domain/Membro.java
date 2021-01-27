@@ -18,6 +18,8 @@ public class Membro implements Serializable {
     @OneToMany(mappedBy="membro", cascade=CascadeType.ALL)
     private List<Emprestado> emprestimos;
 
+    public Membro(){}
+
     public Membro(Integer numMembro, String nome, Integer idade){
         this.numMembro = numMembro;
         this.nome = nome;

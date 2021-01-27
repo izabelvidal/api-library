@@ -19,6 +19,8 @@ public class Livro implements Serializable {
     @OneToMany(mappedBy="livro", cascade=CascadeType.ALL)
     private List<Emprestado> emprestimos;
 
+    public Livro(){}
+
     public Livro(Integer isbn, String titulo, String autores, String editora) {
         this.isbn = isbn;
         this.titulo = titulo;

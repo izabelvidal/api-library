@@ -20,6 +20,8 @@ public class Emprestado implements Serializable {
     private Livro livro;
     private Date data;
 
+    public Emprestado(){}
+
     public Emprestado(Integer id, Membro membro, Livro livro) {
         this.id = id;
         this.membro = membro;
